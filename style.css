@@ -1,19 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-}
-
-header, nav, section, footer {
-    margin: 20px;
-}
-
-nav ul {
-    list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+header, section, footer {
+    margin: 20px;
 }
 
 a {
@@ -28,18 +20,27 @@ a:hover {
 .banner img {
     width: 100%; 
     height: auto; 
-}
-
-.bio-pic {
-    width: 100px; 
-    height: auto; 
-    border-radius: 50%; 
-    float: left; 
-    margin-right: 20px;
+    max-height: 150px;
 }
 
 #bio {
-    overflow: hidden;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+}
+
+.bio-content {
+    flex-grow: 1; 
+}
+
+.bio-image {
+    margin-right: 20px; 
+}
+
+.headshot {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
 }
 
 h1, h2 {
@@ -55,40 +56,31 @@ h2 {
 }
 
 form {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 10px;
     max-width: 500px;
 }
 
-form label {
-    grid-column: 1 / 2;
-    text-align: right;
-    margin-right: 10px;
+form label, form input, form textarea, form input[type="submit"] {
+    display: block; 
+    width: 100%; 
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    grid-column: 2 / 3;
-    width: 100%;
+    margin-bottom: 10px; 
     padding: 5px;
 }
 
 form input[type="submit"] {
-    grid-column: 2 / 3;
     padding: 10px;
     background-color: #007BFF;
     color: white;
     border: none;
     cursor: pointer;
+    margin-top: 10px; 
 }
 
 form input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-body, a, a:hover {
-    color: #333;
-    background-color: #fff;
-}
