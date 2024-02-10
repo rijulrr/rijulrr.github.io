@@ -88,10 +88,6 @@ form input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-.bio-pic {
-    border: 0;
-}
-
 body, a, a:hover {
     color: #333;
     background-color: #fff;
