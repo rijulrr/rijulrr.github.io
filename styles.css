@@ -25,6 +25,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.banner img {
+    width: 100%; 
+    height: auto; 
+}
+
 .bio-pic {
     width: 150px;
     height: auto;
