@@ -31,9 +31,15 @@ a:hover {
 }
 
 .bio-pic {
-    width: 150px;
-    height: auto;
-    border-radius: 75px; 
+    width: 100px; 
+    height: auto; 
+    border-radius: 50%; 
+    float: left; 
+    margin-right: 20px;
+}
+
+#bio {
+    overflow: hidden;
 }
 
 h1, h2 {
